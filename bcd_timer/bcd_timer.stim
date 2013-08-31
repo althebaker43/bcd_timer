@@ -1,0 +1,9 @@
+$log PORTD
+$log DDRD
+$startlog bcd_timer.sim_out
+
+#4000000
+
+$stoplog
+$break
+$quit

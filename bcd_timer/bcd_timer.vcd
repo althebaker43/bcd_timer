@@ -1,0 +1,111 @@
+$date Jul 28 2013 16:03:21 $end
+$version Atmel Studio 6.1 $end
+$timescale 1 us $end
+$scope module top $end
+$var reg 8 0 DDRD $end
+$scope module DDRDbits $end
+$var reg 1 1 DDRD0 $end
+$var reg 1 2 DDRD1 $end
+$var reg 1 3 DDRD2 $end
+$var reg 1 4 DDRD3 $end
+$var reg 1 5 DDRD4 $end
+$var reg 1 6 DDRD5 $end
+$var reg 1 7 DDRD6 $end
+$var reg 1 8 DDRD7 $end
+$upscope $end
+$var reg 8 9 PORTD $end
+$scope module PORTDbits $end
+$var reg 1 a PORTD0 $end
+$var reg 1 b PORTD1 $end
+$var reg 1 c PORTD2 $end
+$var reg 1 d PORTD3 $end
+$var reg 1 e PORTD4 $end
+$var reg 1 f PORTD5 $end
+$var reg 1 g PORTD6 $end
+$var reg 1 h PORTD7 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b00000000 0
+01
+02
+03
+04
+05
+06
+07
+08
+b00000000 9
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+0h
+$end
+#6
+b00001111 0
+11
+12
+13
+14
+#262173
+b00000001 9
+1a
+#524316
+b00000010 9
+0a
+1b
+#786462
+b00000011 9
+1a
+#1048605
+b00000100 9
+0a
+0b
+1c
+#1310748
+b00000101 9
+1a
+#1572894
+b00000110 9
+0a
+1b
+#1835037
+b00000111 9
+1a
+#2097180
+b00001000 9
+0a
+0b
+0c
+1d
+#2359326
+b00001001 9
+1a
+#2621468
+b00000000 9
+0a
+0d
+#2883614
+b00000001 9
+1a
+#3145757
+b00000010 9
+0a
+1b
+#3407900
+b00000011 9
+1a
+#3670046
+b00000100 9
+0a
+0b
+1c
+#3932189
+b00000101 9
+1a
