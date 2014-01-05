@@ -29,11 +29,11 @@ main:
 
     ; Setup Port D
     LDI     R16,0X0F        ; Set low nibble of R16 high
-    OUT     DDRD,R16        ; Set PD0-PD3 to output
+    OUT     _SFR_IO_ADDR(DDRD),R16        ; Set PD0-PD3 to output
 
     ; Disable power reduction for Timer 2
     LDI     XL,lo8(PRR)     ; Move low byte of PRR into XL
-    LDI     XH,hi8(PRR)    ; Move high byte of PRR into XH
+    LDI     XH,hi8(PRR)     ; Move high byte of PRR into XH
     LD      R16,X           ; Load PRR contents into R16
     CBR     R16,0X40        ; Clear Timer 2 bit
     ST      X,R16           ; Store new flags into PRR
@@ -70,7 +70,7 @@ LOOP:
 
     RCALL   WAIT        ; Wait for a certain amount of time
 
-    OUT     SEG7,R21    ; Output current value to 7-segment pins
+    OUT     _SFR_IO_ADDR(SEG7),R21    ; Output current value to 7-segment pins
 
     INC     R21         ; Increment 7-segment value
     CPI     R21,10      ; Compare new value with 10
